@@ -41,9 +41,10 @@ function setup() {
   createCanvas(600, 700); 
   rectMode(CENTER);
   textAlign(CENTER, CENTER);
-  
-  activeImg = bgImg;
 
+  userStartAudio();
+  activeImg = bgImg;
+  
   // Track arrays to handle clean audio state cut-offs
   allSounds = [sndWaves, sndSteps, sndChomp, sndLick, sndBubbles, sndScream];
 }
